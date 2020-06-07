@@ -1,0 +1,19 @@
+{
+  "gender": "MALE",
+  "firstname": "Bob",
+  "lastname": "White",
+  "email": "",
+  "password": "awdaw12d12d",
+  "dateOfBirth": "15/10/1990",
+  "homephone": "21548621",
+  "mobilephone": "843181621981",
+  "addresses": {
+    "address1": "Lenina",
+    "address2": "Gukova",
+    "city": "Volgograd",
+    "state": "Alaska",
+    "postcode": "99503",
+    "addinfo": "Information",
+    "assignaddress": "info"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "gender": "FEMALE",
+  "firstname": "1231231",
+  "lastname": "4124123",
+  "email": "invemail",
+  "password": "1",
+  "dateOfBirth": "15/10/2020",
+  "homephone": "onlyletters",
+  "mobilephone": "onlyletters",
+  "addresses": {
+    "address1": "<div>div tag</div>",
+    "address2": "<span>span tag</span>",
+    "city": "city",
+    "state": "20",
+    "postcode": "postcode",
+    "addinfo": "info",
+    "assignaddress": "info"
+  }
+}
