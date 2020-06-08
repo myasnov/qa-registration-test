@@ -7,6 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+/**
+ * Base page for all pages
+ */
 public class BasePage {
     private static final int TIMEOUT = PropertyHelper.getInstance().getTimeout();
     private static final int SLEEP_TIME = 5000;
@@ -24,7 +27,10 @@ public class BasePage {
         driver.get(siteUrl);
     }
 
-    public boolean waitForJSToLoad() {
+    /**
+     * Wait for page load
+     */
+    public boolean waitForPageLoad() {
 
         ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
             @Override

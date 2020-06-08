@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * Main page
+ */
 public class MainPage extends BasePage {
 
     @FindBy(css = "nav")
@@ -18,6 +21,9 @@ public class MainPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    /**
+     * Click sign in button
+     */
     public void signInClick() {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.until(ExpectedConditions.visibilityOf(navigationBar));

@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * Login page
+ */
 public class LoginPage extends BasePage {
 
     @FindBy(id = "email_create")
@@ -20,6 +23,9 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    /**
+     * Create an account step on login page
+     */
     public void createAnAccountEmail(String email) {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.until(ExpectedConditions.visibilityOf(emailInput));

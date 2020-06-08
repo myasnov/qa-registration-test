@@ -22,6 +22,9 @@ public class NavBar extends BasePage {
         signInLink.click();
     }
 
+    /**
+     * Validate user name in navBar
+     */
     public void validateUserName(String expectedUserName) {
 
         wait.until(

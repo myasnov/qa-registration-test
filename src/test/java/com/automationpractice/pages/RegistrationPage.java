@@ -100,6 +100,9 @@ public class RegistrationPage extends BasePage {
         Assert.assertTrue(equals(errors, actualErrors), "All expected errors do not displayed");
     }
 
+    /**
+     * Verify page elements displayed
+     */
     public void verifyPageElementsDisplayed() {
 
         Assert.assertTrue(radioGender1.isEnabled(), "Radiobutton Mr is not displayed");
@@ -113,21 +116,24 @@ public class RegistrationPage extends BasePage {
         Assert.assertTrue(birthYear.isEnabled(), "Select Year of Birth is not displayed");
         Assert.assertTrue(newsSignUp.isEnabled(), "Checkbox News Letter is not displayed");
         Assert.assertTrue(offers.isEnabled(), "Checkbox Receive special offers is not displayed");
-        Assert.assertTrue(yourAddrFirstName.isDisplayed(), "Input First Name is not displayed (Address)");
-        Assert.assertTrue(yourAddrLastName.isDisplayed(), "Input Last Name is not displayed (Address)");
-        Assert.assertTrue(yourAddress1.isDisplayed(), "Input Address is not displayed (Address)");
-        Assert.assertTrue(yourAddress2.isDisplayed(), "Input Address (Line 2) is not displayed (Address)");
-        Assert.assertTrue(yourAddrCity.isDisplayed(), "Input City is not displayed (Address)");
-        Assert.assertTrue(yourAddrPostcode.isDisplayed(), "Input Postcode is not displayed (Address)");
-        Assert.assertTrue(yourAddrState.isEnabled(), "Select State is not displayed (Address)");
-        Assert.assertTrue(yourAddrOther.isDisplayed(), "Textarea Additional Information is not displayed (Address)");
-        Assert.assertTrue(yourAddrHomePhone.isDisplayed(), "Input Home Phone is not displayed (Address)");
-        Assert.assertTrue(yourAddrMobilePhone.isDisplayed(), "Input Mobile Phone is not displayed (Address)");
-        Assert.assertTrue(yourAddrAlias.isDisplayed(), "Input Assign an Address Alias is not displayed (Address)");
+        Assert.assertTrue(yourAddrFirstName.isDisplayed(), "Input First Name is not displayed");
+        Assert.assertTrue(yourAddrLastName.isDisplayed(), "Input Last Name is not displayed");
+        Assert.assertTrue(yourAddress1.isDisplayed(), "Input Address is not displayed");
+        Assert.assertTrue(yourAddress2.isDisplayed(), "Input Address (Line 2) is not displayed");
+        Assert.assertTrue(yourAddrCity.isDisplayed(), "Input City is not displayed");
+        Assert.assertTrue(yourAddrPostcode.isDisplayed(), "Input Postcode is not displayed");
+        Assert.assertTrue(yourAddrState.isEnabled(), "Select State is not displayed");
+        Assert.assertTrue(yourAddrOther.isDisplayed(), "Textarea Additional Information is not displayed");
+        Assert.assertTrue(yourAddrHomePhone.isDisplayed(), "Input Home Phone is not displayed");
+        Assert.assertTrue(yourAddrMobilePhone.isDisplayed(), "Input Mobile Phone is not displayed");
+        Assert.assertTrue(yourAddrAlias.isDisplayed(), "Input Assign an Address Alias is not displayed");
         Assert.assertTrue(submit.isDisplayed(), "Submit button is not displayed");
 
     }
 
+    /**
+     * Fill user data in form fields
+     */
     public void fillUserData(User user) {
         if (user.getGender() == user.getGender().FEMALE) {
             radioGender2.click();

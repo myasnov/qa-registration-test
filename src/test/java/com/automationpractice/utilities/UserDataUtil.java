@@ -2,8 +2,6 @@ package com.automationpractice.utilities;
 
 import com.automationpractice.models.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,8 +12,6 @@ public class UserDataUtil {
 
     private static final String JSON_INVALID_DATA_PATH = System.getProperty("user.dir") + PropertyHelper.getInstance().getJsonInvData();
     private static final String JSON_VALID_DATA_PATH = System.getProperty("user.dir") + PropertyHelper.getInstance().getJsonValidData();
-
-    private static final Logger logger = LogManager.getLogger(UserDataUtil.class);
 
     public User getInvalidUserData() throws IOException {
 
